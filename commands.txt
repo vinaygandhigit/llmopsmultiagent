@@ -1,0 +1,32 @@
+### Run API 
+python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+
+## Balance Enquiry
+curl http://127.0.0.1:8000/account-agent/chat 
+  -H "Content-Type: application/json" 
+  -d '{"message":"What is the balance for account ACC10001?"}'
+
+## Transaction Details
+curl http://127.0.0.1:8000/transaction-agent/chat 
+  -H "Content-Type: application/json" 
+  -d '{"message":"Show the recent transactions for account ACC10001."}'
+
+## Statement Details
+curl http://127.0.0.1:8000/transaction-agent/chat 
+  -H "Content-Type: application/json" 
+  -d '{"message":"Show the available account statements for ACC10001."}'
+
+## Address Update
+curl http://127.0.0.1:8000/service-agent/chat 
+  -H "Content-Type: application/json" 
+  -d '{"message":"Check the latest address update status for ACC10001."}'
+
+## KYC Update status
+curl http://127.0.0.1:8000/service-agent/chat 
+  -H "Content-Type: application/json" 
+  -d '{"message":"What is the KYC verification status for ACC10001?"}'
+
+## Check Book Update status
+curl http://127.0.0.1:8000/service-agent/chat 
+  -H "Content-Type: application/json" 
+  -d '{"message":"Check the cheque book request status for ACC10001."}'  

@@ -1,0 +1,8 @@
+{
+  "current": {
+    "account_agent": "v1",
+    "transaction_agent": "v1",
+    "service_agent": "v1",
+    "bank_supervisor": "v1"
+  }
+}
