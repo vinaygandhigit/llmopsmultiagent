@@ -17,8 +17,7 @@ piece people usually mean when they say "LLMOps":
 4. **Feedback loops** — end-user feedback that flows back into evals.
 5. **Guardrails** — input validation, cost controls, latency SLOs.
 
-Every command below is real and was run against this codebase — copy/paste
-them and you'll see the same kind of output.
+Every command below is real and was run against this codebase — copy/paste them and you'll see the same kind of output.
 
 ---
 
